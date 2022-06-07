@@ -17,7 +17,7 @@ function List(){
             {tarefas.map((item, index) => (
                 // <Item tarefa={item.tarefa} tempo={item.tempo} />
                 <Item 
-                    key={index}
+                    key={index} //props interna do react apenas para fazer conexão entre o VDOM e DOM (se fosse array não funcionaria)
                     {...item} //desctruction, funciona se as chaves forem iguais às props
                 /> 
             ))}

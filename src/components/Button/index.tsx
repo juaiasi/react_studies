@@ -1,11 +1,11 @@
 import React from "react"
 import style from "./Button.module.scss"
 
-class Button extends React.Component<{ texto:string }>{ //props entre <>, com o tipo
+class Button extends React.Component<{ children: any }> { //props entre <>, com o tipo. Ex: 
     render() {
         return (
             <button className={style.botao}>
-                {this.props.texto}
+                {this.props.children}
             </button>
         )
     }
